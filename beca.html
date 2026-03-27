@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beca Internacional - Gestión por Procesos con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at top right, #e0f2fe, #f8fafc 50%);
+        }
+
+        .card-dark-pure {
+            background: #000000;
+            color: white;
+        }
+
+        .card-dark {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+        }
+
+        .bg-deep-blue {
+            background-color: #0f172a;
+        }
+
+        .rounded-3xl {
+            border-radius: 2rem;
+        }
+
+        .shadow-soft {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .flag-icon {
+            font-size: 1.75rem;
+            transition: transform 0.2s;
+            cursor: default;
+        }
+
+        .flag-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .module-row {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .module-row:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Estilo para el contenedor del iframe */
+        .form-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            background: white;
+        }
+
+        .form-container iframe {
+            width: 100%;
+            height: 900px;
+            /* Ajustado para mejor visualización inicial */
+            border: none;
+        }
+    </style>
+</head>
+
+<body class="hero-bg text-slate-900">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <img src="https://jmaiconsulting.pe/images/services/logo-jm-ai-consulting.png"
+                        alt="JM AI Consulting Logo" class="h-12 w-auto object-contain">
+                </div>
+                <div class="hidden md:flex items-center space-x-2 text-xs font-bold text-slate-400">
+                    <span
+                        class="bg-blue-50 text-blue-600 px-4 py-1.5 rounded-full border border-blue-100 uppercase tracking-widest">
+                        200 BECAS DISPONIBLES
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero + Registro -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                <div>
+                    <span class="text-blue-600 font-black uppercase tracking-[0.2em] text-sm mb-4 block">Convocatoria
+                        Latam 2024</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-8">
+                        Postula a una de las <span class="text-blue-600">200 becas</span> para el curso internacional
+                    </h1>
+                    <h2 class="text-2xl md:text-4xl font-bold text-slate-800 mb-6">
+                        Gestión por Procesos 4.0 con IA Generativa
+                    </h2>
+
+                    <p class="text-lg text-slate-500 max-w-lg mb-8 leading-relaxed">
+                        Accede a un beneficio exclusivo del <strong class="text-slate-900">50% de subvención
+                            directa</strong>. Aprende a liderar la transformación digital optimizando flujos de trabajo
+                        con Inteligencia Artificial.
+                    </p>
+
+                    <!-- Sección de Banderas Latinoamericanas -->
+                    <div class="mb-10">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">Válido para toda
+                            Latinoamérica:</p>
+                        <div class="flex flex-wrap gap-4 max-w-md">
+                            <span class="flag-icon" title="Argentina">🇦🇷</span>
+                            <span class="flag-icon" title="Bolivia">🇧🇴</span>
+                            <span class="flag-icon" title="Brasil">🇧🇷</span>
+                            <span class="flag-icon" title="Chile">🇨🇱</span>
+                            <span class="flag-icon" title="Colombia">🇨🇴</span>
+                            <span class="flag-icon" title="Costa Rica">🇨🇷</span>
+                            <span class="flag-icon" title="Cuba">🇨🇺</span>
+                            <span class="flag-icon" title="Ecuador">🇪🇨</span>
+                            <span class="flag-icon" title="El Salvador">🇸🇻</span>
+                            <span class="flag-icon" title="Guatemala">🇬🇹</span>
+                            <span class="flag-icon" title="Honduras">🇭🇳</span>
+                            <span class="flag-icon" title="México">🇲🇽</span>
+                            <span class="flag-icon" title="Nicaragua">🇳🇮</span>
+                            <span class="flag-icon" title="Panamá">🇵🇦</span>
+                            <span class="flag-icon" title="Paraguay">🇵🇾</span>
+                            <span class="flag-icon" title="Perú">🇵🇪</span>
+                            <span class="flag-icon" title="Puerto Rico">🇵🇷</span>
+                            <span class="flag-icon" title="República Dominicana">🇩🇴</span>
+                            <span class="flag-icon" title="Uruguay">🇺🇾</span>
+                            <span class="flag-icon" title="Venezuela">🇻🇪</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-6 text-xs font-bold text-slate-400">
+                        <span class="flex items-center uppercase tracking-wide"><span
+                                class="w-2 h-2 bg-green-400 rounded-full mr-2"></span> Registro Abierto</span>
+                        <span class="flex items-center uppercase tracking-wide"><span
+                                class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Certificación Oficial</span>
+                    </div>
+                </div>
+
+                <!-- Formulario de Google (Iframe) -->
+                <div class="bg-white rounded-3xl shadow-soft border border-slate-100 relative overflow-hidden">
+                    <div class="p-8 pb-0">
+                        <h3 class="text-2xl font-bold mb-2 text-slate-800">Inicia tu registro</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">Completa el formulario oficial para
+                            evaluar tu perfil y asignar tu beca del 50%.</p>
+                    </div>
+
+                    <div class="form-container">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScDAzgLmIpz9lHULeDGXXKcLcl8tysemL74Znmn2jra5ti_mg/viewform?embedded=true"
+                            frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Diferenciales -->
+    <section class="pb-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-xl font-black text-blue-600 mb-10 uppercase tracking-widest text-center md:text-left">¿POR
+                QUÉ ELEGIRNOS?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+                <div class="md:col-span-4 bg-white p-10 rounded-3xl shadow-soft border border-slate-50">
+                    <div
+                        class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-8 text-xl font-bold">
+                        ∞</div>
+                    <h4 class="text-2xl font-extrabold mb-4 uppercase tracking-tight">Flexibilidad Radical</h4>
+                    <p class="text-slate-500 leading-relaxed text-sm">Tu ritmo es nuestra métrica. Adaptamos la
+                        arquitectura del curso a tu vida, permitiendo una evolución sin fricciones.</p>
+                </div>
+
+                <div class="md:col-span-4 bg-white p-10 rounded-3xl shadow-soft border border-slate-50">
+                    <div
+                        class="w-12 h-12 bg-cyan-50 text-cyan-500 border border-cyan-100 rounded-xl flex items-center justify-center mb-8 text-xl">
+                        🤖</div>
+                    <h4 class="text-2xl font-extrabold mb-4 uppercase tracking-tight">Un Bot por Curso</h4>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-6">Inteligencia Artificial dedicada 24/7. Un
+                        asistente experto entrenado específicamente para guiarte en cada lección.</p>
+                    <span class="text-[10px] font-bold text-cyan-500 flex items-center uppercase tracking-widest">
+                        <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span> Asistente Activo
+                    </span>
+                </div>
+
+                <div class="md:col-span-4 card-dark-pure p-10 rounded-3xl shadow-2xl">
+                    <div
+                        class="w-12 h-12 bg-slate-800 text-cyan-400 rounded-xl flex items-center justify-center mb-8 text-xl">
+                        🎯</div>
+                    <h4 class="text-2xl font-extrabold mb-4 uppercase tracking-tight text-white">Foco en Habilidades
+                    </h4>
+                    <p class="text-slate-400 leading-relaxed text-sm">Construimos capacidades tangibles. Nuestro modelo
+                        se enfoca en el desarrollo real de las competencias que demanda el futuro.</p>
+                </div>
+
+                <div class="md:col-span-7 bg-white p-10 rounded-3xl shadow-soft border border-slate-100">
+                    <div
+                        class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-8 text-xl font-bold">
+                        💠</div>
+                    <h4 class="text-4xl font-extrabold mb-6 uppercase tracking-tight leading-none">Experiencias
+                        <br>Inmersivas</h4>
+                    <p class="text-slate-500 leading-relaxed mb-10 max-w-xl text-lg">Trascendemos lo convencional con
+                        metodologías transformadoras para una retención profunda del aprendizaje.</p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div
+                            class="bg-slate-50 py-3 rounded-2xl text-center flex items-center justify-center space-x-2">
+                            <span class="text-[10px] font-black text-slate-400 uppercase">Resumen de Sesión</span>
+                        </div>
+                        <div
+                            class="bg-slate-50 py-3 rounded-2xl text-center flex items-center justify-center space-x-2">
+                            <span class="text-[10px] font-black text-slate-400 uppercase">Podcast de Sesión</span>
+                        </div>
+                        <div
+                            class="bg-slate-50 py-3 rounded-2xl text-center flex items-center justify-center space-x-2">
+                            <span class="text-[10px] font-black text-slate-400 uppercase">Infografía</span>
+                        </div>
+                        <div
+                            class="bg-cyan-50 py-3 rounded-2xl text-center border border-cyan-100 flex items-center justify-center space-x-2">
+                            <span class="text-[10px] font-black text-cyan-600 uppercase">Recursos Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5 card-dark p-10 rounded-3xl shadow-2xl relative overflow-hidden group">
+                    <div
+                        class="w-12 h-12 bg-white/10 text-cyan-400 rounded-xl flex items-center justify-center mb-8 text-xl">
+                        🌐</div>
+                    <h4 class="text-3xl font-extrabold mb-6 uppercase tracking-tight leading-tight">Visión Global
+                        <br>que inspira</h4>
+                    <p class="text-slate-400 leading-relaxed mb-12 text-sm">Aprende de mentes brillantes con trayectoria
+                        y experiencia en los mercados internacionales más exigentes.</p>
+
+                    <div
+                        class="absolute bottom-8 right-8 w-14 h-14 bg-white text-slate-900 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Gestión por Procesos 4.0 con IA Generativa -->
+    <section class="py-24 px-6 bg-[#0a0f1e]">
+        <div class="max-w-7xl mx-auto bg-[#111827] rounded-[2.5rem] overflow-hidden border border-white/5 shadow-2xl">
+            <div class="grid lg:grid-cols-2">
+
+                <!-- Contenido Izquierdo -->
+                <div class="p-12 lg:p-20">
+                    <span
+                        class="bg-blue-600/20 text-blue-400 text-[10px] font-bold px-4 py-1.5 rounded-full border border-blue-500/30 uppercase tracking-widest mb-8 inline-block">
+                        Programa Intensivo 12 Horas
+                    </span>
+
+                    <h2
+                        class="text-4xl lg:text-5xl font-extrabold text-white mb-4 uppercase tracking-tight leading-none">
+                        Gestión por <br>Procesos 4.0 <br>
+                        <span class="text-blue-500 italic">con IA Generativa</span>
+                    </h2>
+
+                    <p class="text-slate-400 text-lg mb-12 leading-relaxed max-w-md">
+                        Integra la IA en el mapa de procesos, el levantamiento de información y la mejora continua. Deja
+                        de ser un documentador y conviértete en un arquitecto de valor.
+                    </p>
+
+                    <!-- Lista de Módulos -->
+                    <div class="space-y-4 mb-12">
+                        <div class="module-row flex items-center p-4 rounded-2xl">
+                            <span class="text-blue-500 font-bold italic mr-6 text-sm">M1</span>
+                            <span class="text-white font-semibold text-sm">Arquitectura de Procesos con IA
+                                Generativa</span>
+                        </div>
+                        <div class="module-row flex items-center p-4 rounded-2xl">
+                            <span class="text-blue-500 font-bold italic mr-6 text-sm">M2</span>
+                            <span class="text-white font-semibold text-sm">Documentación Inteligente: de Entrevista a
+                                Ficha</span>
+                        </div>
+                        <div class="module-row flex items-center p-4 rounded-2xl">
+                            <span class="text-blue-500 font-bold italic mr-6 text-sm">M3</span>
+                            <span class="text-white font-semibold text-sm">Medición con IA: KPIs y Análisis de
+                                Datos</span>
+                        </div>
+                        <div class="module-row flex items-center p-4 rounded-2xl">
+                            <span class="text-blue-500 font-bold italic mr-6 text-sm">M4</span>
+                            <span class="text-white font-semibold text-sm">Mejora Continua e Innovación con IA</span>
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/51933388004?text=Hola,%20quisiera%20más%20información%20sobre%20el%20curso%20de%20Gestión%20por%20Procesos%204.0"
+                            target="_blank"
+                            class="bg-[#22c55e] hover:bg-[#16a34a] text-white font-bold py-4 px-8 rounded-2xl flex items-center justify-center space-x-2 transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.406.832 2.39 1.072 3.748 1.073 5.404 0 9.807-4.403 9.809-9.809.001-2.618-1.02-5.08-2.873-6.934-1.854-1.855-4.316-2.873-6.933-2.873-5.405 0-9.808 4.403-9.81 9.809 0 2.03.626 3.968 1.812 5.624l-.948 3.461 3.53-.925c1.452.825 2.502 1.072 3.665 1.074zm11.233-7.232c-.313-.157-1.854-.915-2.141-1.018-.287-.104-.496-.157-.704.157s-.808 1.018-.99 1.226c-.183.209-.365.235-.678.078s-1.319-.486-2.512-1.55c-.928-.827-1.554-1.849-1.737-2.163-.183-.314-.019-.484.137-.64.141-.14.313-.366.47-.549s.209-.314.313-.523.052-.392-.026-.549c-.078-.157-.704-1.699-.965-2.327-.254-.611-.512-.528-.704-.538-.182-.01-.391-.01-.599-.01s-.548.078-.835.392c-.287.313-1.096 1.071-1.096 2.614s1.122 3.033 1.278 3.242c.157.209 2.208 3.373 5.351 4.733.748.324 1.332.518 1.787.662.752.239 1.437.205 1.977.125.602-.09 1.854-.758 2.115-1.49s.261-1.359.183-1.49-.287-.236-.6-.393z" />
+                            </svg>
+                            <span>Consultar</span>
+                        </a>
+                        <button
+                            class="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-2xl border border-white/10 transition-all">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Imagen Derecha -->
+                <div class="relative min-h-[500px] lg:min-h-full flex items-center justify-center bg-slate-900/50">
+                    <div class="absolute inset-8 rounded-3xl overflow-hidden border border-white/10 group shadow-2xl">
+                        <img src="https://jmaiconsulting.pe/media/capacitaciones/banners/Gemini_Generated_Image_cbllb5cbllb5cbll_1.png"
+                            alt="Gestión por Procesos 4.0 con IA"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+
+                        <!-- Badge Informativo -->
+                        <div
+                            class="absolute bottom-10 left-10 text-white bg-[#111827]/80 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+                            <div class="text-4xl font-extrabold text-blue-500 mb-1">28 MAR</div>
+                            <div class="text-xs font-black uppercase tracking-[0.3em] opacity-80">Curso Internacional
+                                Intensivo</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-200 bg-white">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-400 text-[10px] font-bold uppercase tracking-widest">
+            <div class="flex items-center space-x-2 grayscale opacity-60 mb-4 md:mb-0">
+                <img src="https://jmaiconsulting.pe/images/services/logo-jm-ai-consulting.png" alt="JM AI Consulting"
+                    class="h-6">
+            </div>
+            <p>© 2024 JM AI CONSULTING - PROGRAMA DE BECAS</p>
+            <div class="flex space-x-8 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600">Privacidad</a>
+                <a href="#" class="hover:text-blue-600">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
